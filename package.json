@@ -4,6 +4,12 @@
 	"icon": "images/vscode-search-with_512x512.png",
 	"description": "Online code snippet search extension for VS code",
 	"version": "1.0.0",
+	"publisher": "DarkSpace",
+	"author": "Balasubramanian S <sbalasubramanian96@gmail.com> (https://github.com/sbalasubramanian14)",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sbalasubramanian14/vscode-search-with"
+	},
 	"engines": {
 		"vscode": "^1.56.0"
 	},
