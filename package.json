@@ -3,7 +3,7 @@
 	"displayName": "vscode-search-with",
 	"icon": "images/vscode-search-with_512x512.png",
 	"description": "Online code snippet search extension for VS code",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "DarkSpace",
 	"author": "Balasubramanian S <sbalasubramanian96@gmail.com> (https://github.com/sbalasubramanian14)",
 	"repository": {
@@ -17,7 +17,10 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.vscode-search-with"
+		"onCommand:extension.vscode-search-with",
+		"onCommand:extension.vscode-search-with-google",
+		"onCommand:extension.vscode-search-with-stack",
+		"onCommand:extension.vscode-search-with-docs"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -25,6 +28,24 @@
 			{
 				"command": "extension.vscode-search-with",
 				"title": "Search With",
+				"category": "Search",
+				"icon": "vs-search"
+			},
+			{
+				"command": "extension.vscode-search-with-google",
+				"title": "Search With Google",
+				"category": "Search",
+				"icon": "vs-search"
+			},
+			{
+				"command": "extension.vscode-search-with-stack",
+				"title": "Search With StackOverflow",
+				"category": "Search",
+				"icon": "vs-search"
+			},
+			{
+				"command": "extension.vscode-search-with-docs",
+				"title": "Search With Docs",
 				"category": "Search",
 				"icon": "vs-search"
 			}
@@ -41,6 +62,24 @@
 				{
 					"command": "extension.vscode-search-with",
 					"alt": "extension.vscode-search-with",
+					"group": "z_commands",
+					"when": "editorHasSelection"
+				},
+				{
+					"command": "extension.vscode-search-with-google",
+					"alt": "extension.vscode-search-with-google",
+					"group": "z_commands",
+					"when": "editorHasSelection"
+				},
+				{
+					"command": "extension.vscode-search-with-stack",
+					"alt": "extension.vscode-search-with-stack",
+					"group": "z_commands",
+					"when": "editorHasSelection"
+				},
+				{
+					"command": "extension.vscode-search-with-docs",
+					"alt": "extension.vscode-search-with-docs",
 					"group": "z_commands",
 					"when": "editorHasSelection"
 				}
